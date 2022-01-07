@@ -1,10 +1,10 @@
 var canvas = new fabric.Canvas('myCanvas');
  var x= document.getElementById("myAudio");
- canvas=document.getElementById("myCanvas")
+ 
 function new_image()
 {	
 	fabric.Image.fromURL('BirthdayImage.jpg' , function(img){
-    block_image_object = Img;
+    block_image_object = img;
     block_image_object.scaleToWidth(700);
     block_image_object.scaleToHeight(510);
     block_image_object.set({
@@ -14,7 +14,7 @@ function new_image()
     canvas.add(block_image_object);
     });
 }
-
+new_image()
 function playSound(){
 	x.play();
 }
